@@ -1,0 +1,61 @@
+.assignment-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.assignment-item {
+    background-color: #1f2937;
+    padding: 25px;
+    border-radius: 12px;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.assignment-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.assignment-item h3 {
+    color: #f97316;
+    margin-bottom: 10px;
+}
+
+.assignment-item p {
+    margin-bottom: 20px;
+    color: #cbd5e1;
+}
+
+.assignment-item a {
+    text-decoration: none;
+    background-color: #3b82f6;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 6px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.assignment-item a:hover {
+    background-color: #2563eb;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: #f97316;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.navigation {
+  margin-top: 2vw;
+}
+
+.previous-btn a{
+    text-decoration: none;
+    background-color: #3b82f6;
+    color: white;
+    padding: 1vw;
+    border-radius: 1vw;
+}
