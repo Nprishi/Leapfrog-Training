@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Weather App</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Weather Finder </h1>
+    <p>Search city weather in real time.</p>
+
+    <div class="search-box">
+
+      <input type="text" id="cityInput" placeholder="Enter city name" />
+      <button id="searchBtn">Search</button>
+
+    </div>
+
+    <p id="loading" class="loading">Loading weather...</p>
+    <p id="error" class="error"></p>
+
+    <div id="weatherCard" class="weather-card">
+
+      <h2 id="cityName"></h2>
+
+      <img id="weatherIcon" src="" alt="Weather Icon" />
+
+      <h3 id="temperature"></h3>
+      <p id="description"></p>
+
+      <hr />
+
+      <div class="grid">
+
+        <p id="feelsLike"></p>
+        <p id="tempMin"></p>
+        <p id="tempMax"></p>
+
+        <p id="humidity"></p>
+        <p id="pressure"></p>
+        <p id="wind"></p>
+
+        <p id="visibility"></p>
+        <p id="clouds"></p>
+
+      </div>
+
+      <hr />
+
+      <div class="grid">
+
+        <p id="lat"></p>
+        <p id="lon"></p>
+
+      </div>
+
+      <hr />
+
+      <div class="grid">
+
+        <p id="sunrise"></p>
+        <p id="sunset"></p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+   <script type="module" src="script.js"></script>
+
+</body>
+
+</html>
