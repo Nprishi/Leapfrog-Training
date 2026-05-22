@@ -26,10 +26,18 @@ export default function LiveClock() {
 
     return (
         <div className="container">
-            <div className="DigitalClock">
-                <h1>Live Digital Clock</h1>
-                <h2>{time.toLocaleTimeString()}</h2>
-                <p>Updates every second using useEffect</p>
+            <div className="FirstClock">
+                <div className="DigitalClock">
+                    <h1>Live Digital Clock</h1>
+                    <h2>{time.toLocaleTimeString()}</h2>
+                    <p>Updates every second using useEffect</p>
+                </div>
+
+                <div className="SavedTime">
+                    <h1>Saved Time</h1>
+                    <img src="../../public/Analog.png" alt="AnalogClock" />
+                    <img src="../../public/Digital.png" alt="DigitalClock" />
+                </div>
             </div>
 
             <div className="AnalogClock">
@@ -117,6 +125,8 @@ export default function LiveClock() {
                 </div>
                 <h2>{formatTime(time)}</h2>
             </div>
+
+
 
         </div>
     );
